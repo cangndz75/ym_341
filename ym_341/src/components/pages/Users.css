@@ -1,0 +1,44 @@
+body{
+    overflow-x: hidden;
+    margin:0;
+}
+#meetings p{
+    font-size:2em;
+}
+#meetings2 img{
+    margin-top:-50px;
+    clip-path: circle();
+}
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#meetings2 .card{
+    border-radius:0.5em;
+    box-shadow:5px 5px 15px #e74c3c;
+    transition: all 0.3s ease in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease in;
+
+}
+#meetings2 .card:hover{
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E
+}
+
+#search{
+    width: 25%;
+    border: 1.5px solid;
+}
+@media screen and (max-width:992px) {
+    #search{
+        width: 50%;
+    }
+    .map{
+        margin: 4%;
+    }
+}
