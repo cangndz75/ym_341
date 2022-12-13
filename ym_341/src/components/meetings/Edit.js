@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory, useParams } from "react-router-dom";
+import {Link, useHistory, useParams } from "react-router-dom";
 import firebase from "../firebase";
 import "./meetings.css";
 const ref = firebase.firestore().collection("meetings");
@@ -45,6 +45,12 @@ const Edit = () => {
   }, []);
   return (
     <div className="container mt-4">
+    <Link
+        className="btn btn-primary d-inline-flex mt-4 ml-4 p-2 d-flex justify-content-end"
+        to="/admin"
+      >
+        Geri
+      </Link>
       <div className="mx-auto my-auto shadow p-5" id="edit">
         <h2 className="text-center mb-4">Düzenle</h2>
         <form onSubmit={(e) => onSubmit(e)}>
