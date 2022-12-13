@@ -59,12 +59,12 @@ const User = (props) => {
                         <div className="text-left">
                           <h5>
                             E-mail:
-                            <span className="ml-2">{meeting.email}</span>g
+                            <span className="ml-2">{meeting.email}</span>
                           </h5>
                           <hr />
                           <h5>
                             Toplantı Saati:
-                            <span className="ml-2">{meeting.number}</span>g
+                            <span className="ml-2">{meeting.number}</span>
                           </h5>
                           <hr />
                         </div>
