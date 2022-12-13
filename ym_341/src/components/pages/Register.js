@@ -59,13 +59,13 @@ const Register = () => {
 
             <div className="mx-auto my-auto shadow p-5" id="container-login">
   
-                <h2 className="text-center mb-4">Hi! Register</h2>
+                <h2 className="text-center mb-4">Kayıt Ol</h2>
                 <div className="form-group">
                     <input
                         type="email"
                         autoFocus required
                         className="form-control form-control-lg"
-                        placeholder="Enter Your E-mail"
+                        placeholder="E-mail"
                         name="Email"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
@@ -77,7 +77,7 @@ const Register = () => {
                         type={showPassword ? "text":"password"}
                         autoFocus required
                         className="form-control form-control-lg"
-                        placeholder="Enter Password"
+                        placeholder="Şifre"
                         name="Password"
                         value={password}
                         onChange={e => setPassword(e.target.value)}
@@ -88,9 +88,9 @@ const Register = () => {
                 </div>
 
                 <div className="btnContainer">
-                            <button class="btn btn-primary btn-lg btn-block mt-2 mb-2" onClick={handleSignup}>Register</button>
-                            <p class="m-4 text-right">Have an account ?
-                                <Link to="/login"><button class="btn btn-secondary btn-sm ml-2">Login</button></Link></p>
+                            <button class="btn btn-primary btn-lg btn-block mt-2 mb-2" onClick={handleSignup}>Kayıt Ol</button>
+                            <p class="m-4 text-right">Hesabın varsa
+                                <Link to="/login"><button class="btn btn-secondary btn-sm ml-2">Giriş Yap</button></Link></p>
                 </div>
             </div>
         </div>
